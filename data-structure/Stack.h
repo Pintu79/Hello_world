@@ -1,5 +1,4 @@
 // Stack.h ... interface to Stack ADT
-// Written by John Shepherd, May 2017
 
 #ifndef STACK_H
 #define STACK_H

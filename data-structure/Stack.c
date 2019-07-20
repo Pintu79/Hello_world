@@ -1,6 +1,5 @@
 // Stack.c ... Stack ADT implementation
 // - uses linked list representation
-// Written by JOhn Shepherd, July 2017
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -87,8 +86,9 @@ void freeStack(Stack s)
    StackNode *cur;
    cur = s->items;
    while (cur != NULL) {
+      StackNode *nxt = cur->next;
       free(cur);
-      cur = cur->next;
+      cur = nxt;
    }
    free(s);
 }
